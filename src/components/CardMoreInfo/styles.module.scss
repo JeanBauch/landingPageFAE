@@ -1,0 +1,76 @@
+.containerCard{
+  width: 100%;
+  display: flex;
+  border-radius: 5px;
+
+  align-items: center;
+  background-color: var(--secundary-light);
+  margin: 1rem 0;
+
+  .headingCard{
+    width: 200px;
+    display: flex;
+    padding: 1.5625rem;
+    h3{
+      font: 300 1.25rem Roboto;
+      color: var(--primary);
+
+      strong {
+        font: 500 1.5rem Roboto;
+        color: var(--white);
+      }
+    }
+  }
+
+  .bodyCard {
+    .bodyInfo{
+      display: flex;
+      padding: 10px;
+      align-items: center;
+    }
+
+    p{
+      font: 300 0.875rem Roboto;
+      color: var(--white);
+      margin-left: 10px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .containerCard{
+    width: 85%;
+    margin: 1rem 0;
+    flex-direction: column;
+    padding: 2rem;
+    align-items: flex-start;
+
+    .headingCard{
+      padding: 0;
+      h3{
+        font: 300 1.75rem Roboto;
+        strong {
+          font: 500 1.75rem Roboto;
+        }
+      }
+    }
+    .bodyCard {
+      .bodyInfo{
+        padding: 10px 0;
+      }
+      p{
+        font: 300 1.25rem Roboto;
+      }
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .containerCard{
+    .bodyCard{
+      p{
+        font: 300 1.143rem Roboto;
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.containerBtn{
+  display: flex;
+  width: 100%;
+  height: 40px;
+
+  //justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+
+  border-top: 1px solid var(--linegray);
+
+  div{
+    width: 68%;
+  }
+
+  h5 {
+    font: 500 0.875rem Roboto;
+    text-align: right;
+  }
+}
+
+@media (max-width: 768px) {
+  .containerBtn{
+    div{
+      width: 58%;
+    }
+    h5 {
+      font: 500 1rem Roboto;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .containerBtn{
+    div{
+      width: 68%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .containerBtn{
+    h5 {
+      font: 500 0.875rem Roboto;
+    }
+  }
+}
